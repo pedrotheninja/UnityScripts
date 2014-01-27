@@ -1,9 +1,15 @@
-﻿#pragma strict
+﻿var leader : Transform;
 
-function Start () {
+var follower : Transform;
 
-}
+var speed : float =5; // The speed of the follower
 
-function Update () {
+ 
+
+function Update(){
+
+    follower.LookAt(leader);
+
+    follower.Translate(speed*Vector3.forward*Time.deltaTime);
 
 }
