@@ -22,9 +22,9 @@ function Update (){
 			transform.Rotate(Vector3(0.0, 180.0, 0.0));
 }
 	if(status == 0){
-	renderer.enabled = true;
-	} else if(status == 1) {
 	renderer.enabled = false;
+	} else if(status == 1) {
+	renderer.enabled = true;
 	}
 };
 
